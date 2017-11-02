@@ -1,0 +1,23 @@
+// ====================================================================
+// File: Ink_reg.rss
+// Created: 03/03/10
+// Author: Sun Jinbo
+// Copyright (c): Tieto, All rights reserved
+// ==================================================================== */
+
+// Ink application's registration resource file 
+
+#include <appinfo.rh>
+
+UID2 KUidAppRegistrationResourceFile
+UID3 0xAFF05678
+
+RESOURCE APP_REGISTRATION_INFO 
+    {
+    app_file="Ink";
+    //
+    localisable_resource_file = "\\resource\\apps\\Ink_loc";
+    //
+    }
+
+// End of File

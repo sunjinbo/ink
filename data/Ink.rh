@@ -1,0 +1,31 @@
+/* ====================================================================
+ * File: Ink.rh
+ * Created: 03/03/10
+ * Author: Sun Jinbo
+ * Copyright (c): Tieto, All rights reserved
+ * ==================================================================== */
+
+#ifndef INK_RH
+#define INK_RH
+
+// INCLUDES
+
+// RESOURCE STRUCTS
+
+STRUCT INKLEVELARRAY
+    {
+    STRUCT levels[];
+    }
+
+STRUCT INKLEVEL
+    {
+	LONG id;
+    LONG count;
+    LONG pass;
+    LONG bonus;
+	LONG timeout;
+    }
+
+#endif // INK_RH
+
+// End of File

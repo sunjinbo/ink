@@ -1,0 +1,79 @@
+// ====================================================================
+// * File: Ink.mmp
+// * Created: 03/03/10
+// * Author: Sun Jinbo
+// * Copyright (c): Tieto, All rights reserved
+// * ====================================================================
+
+CAPABILITY None
+
+TARGET            Ink.exe
+TARGETTYPE        exe
+UID               0x100039CE 0xAFF05678
+
+LANG              SC
+
+SOURCEPATH        ..\src
+SOURCE            Ink.cpp
+SOURCE            InkApplication.cpp 
+SOURCE            InkAppView.cpp
+SOURCE            InkAppUi.cpp
+SOURCE            InkDocument.cpp 
+SOURCE            BmpUtils.cpp
+SOURCE            Canvas.cpp
+SOURCE            Inkdot.cpp
+SOURCE            InkdotAssistor.cpp
+SOURCE            InfoControl.cpp
+SOURCE            MenuButton.cpp
+SOURCE            LayoutManager.cpp
+SOURCE            InkdotFactory.cpp
+SOURCE            InkLevel.cpp
+SOURCE            LevelManager.cpp
+SOURCE            ResReader.cpp
+SOURCE            Scorekeeper.cpp
+SOURCE            Title.cpp
+
+SOURCEPATH        ..\group
+USERINCLUDE       ..\inc
+USERINCLUDE       ..\loc
+
+SYSTEMINCLUDE     \epoc32\include
+#if defined ( __S60_50__ )
+SYSTEMINCLUDE     \epoc32\include\middleware
+SYSTEMINCLUDE     \epoc32\include\domain\middleware
+SYSTEMINCLUDE     \epoc32\include\domain\applications
+SYSTEMINCLUDE     \epoc32\include\domain\osextensions
+SYSTEMINCLUDE     \epoc32\include\osextensions
+SYSTEMINCLUDE     \epoc32\include\domain\middleware\loc
+#endif
+
+LIBRARY           euser.lib
+LIBRARY           apparc.lib
+LIBRARY           cone.lib 
+LIBRARY           eikcore.lib  
+LIBRARY           avkon.lib  
+LIBRARY           fbscli.lib
+LIBRARY           bitgdi.lib
+LIBRARY           gdi.lib
+LIBRARY           ws32.lib
+LIBRARY           commonengine.lib
+LIBRARY           bafl.lib
+LIBRARY           aknicon.lib
+LIBRARY           apgrfx.lib
+LIBRARY           egul.lib
+
+SOURCEPATH        ..\data
+START RESOURCE    Ink.rss
+HEADER
+TARGETPATH        resource\apps
+END
+
+START RESOURCE    Ink_reg.rss
+TARGETPATH        \private\10003a3f\apps
+END
+
+START RESOURCE    Ink_loc.rss
+TARGETPATH        resource\apps
+END
+
+// End of File

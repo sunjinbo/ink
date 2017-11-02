@@ -1,0 +1,30 @@
+/* ====================================================================
+ * File: Button.rh
+ * Created: 03/20/10
+ * Author: Sun Jinbo
+ * Copyright (c): Tieto, All rights reserved
+ * ==================================================================== */
+
+#ifndef BUTTON_RH
+#define BUTTON_RH
+
+// INCLUDES
+
+// RESOURCE STRUCTS
+
+STRUCT BUTTON
+    {
+    LONG id;
+    LONG enabled;
+    LONG align;
+    LONG bitmap;
+    LONG mask;
+    LONG font;
+    LONG baseline;
+    LONG color;
+    LTEXT txt="";
+    }
+
+#endif // BUTTON_RH
+
+// End of File

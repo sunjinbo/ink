@@ -1,0 +1,12 @@
+#define R_DEFAULT_DOCUMENT_NAME                   0x276a5002
+#define R_INK_MENUBAR                             0x276a5004
+#define R_INK_MENU                                0x276a5005
+#define R_INK_START                               0x276a5006
+#define R_INK_BACK                                0x276a5007
+#define R_INK_WEB                                 0x276a5008
+#define R_INK_QUIT                                0x276a5009
+#define R_INK_LEVELS                              0x276a500a
+#define R_INK_INKDOT_CONFIGURATION_LIST           0x276a500b
+#define R_INK_INFO_TOOLTIP_START                  0x276a500c
+#define R_INK_INFO_TOOLTIP_MORE_BALL              0x276a500d
+#define R_INK_INFO_TOOLTIP_EXTRA_BONUS            0x276a500e

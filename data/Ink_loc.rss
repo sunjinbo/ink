@@ -1,0 +1,25 @@
+// ====================================================================
+// File: Ink_loc.rss
+// Created: 03/03/10
+// Author: Sun Jinbo
+// Copyright (c): Tieto, All rights reserved
+// ==================================================================== */
+
+#include <appinfo.rh>
+#include "Ink.loc"
+
+RESOURCE LOCALISABLE_APP_INFO
+    {
+    short_caption = qtn_ink_short_caption_str;
+    caption_and_icon =
+        {
+        CAPTION_AND_ICON_INFO 
+            {
+            caption = qtn_ink_caption_list;
+            number_of_icons = 1;
+            icon_file = "\\resource\\apps\\Ink_icon.mif";
+            }
+        };
+    }
+
+ // End of File

@@ -1,0 +1,32 @@
+; Ink.pkg
+;
+;Language - standard language definitions
+&EN
+
+; standard SIS file header
+#{"Ink"},(0xAFF05678),1,0,0
+
+;Supports Series 60 v 3.0
+(0x101F7961), 0, 0, 0, {"Series60ProductID"}
+
+;Localized Vendor Name
+%{"My Test EN"}
+
+;Unique Vendor name
+:"Vendor"
+
+; Files to copy
+"\epoc32\release\armv5\urel\Ink.exe"-"!:\sys\bin\Ink.exe"
+"\epoc32\data\z\private\10003a3f\apps\Ink_reg.rsc"-"!:\private\10003a3f\import\apps\Ink_reg.rsc"
+"\epoc32\data\z\resource\apps\Ink_loc.Rsc"-"!:\resource\apps\Ink_loc.Rsc"
+"\epoc32\data\z\resource\apps\Ink.Rsc"-"!:\resource\apps\Ink.Rsc"
+"\epoc32\data\z\resource\apps\Ink_icon.mif"-"!:\resource\apps\Ink_icon.mif"
+
+"\epoc32\data\Z\Resource\apps\button.mbm"-"!:\resource\apps\button.mbm"
+"\epoc32\data\Z\Resource\apps\button.mif"-"!:\resource\apps\button.mif"
+"\epoc32\data\Z\Resource\apps\inkdot.mbm"-"!:\resource\apps\inkdot.mbm"
+"\epoc32\data\Z\Resource\apps\inkdot.mif"-"!:\resource\apps\inkdot.mif"
+"\epoc32\data\Z\Resource\apps\canvas.mbm"-"!:\resource\apps\canvas.mbm"
+"\epoc32\data\Z\Resource\apps\canvas.mif"-"!:\resource\apps\canvas.mif"
+"\epoc32\data\Z\Resource\apps\title.mbm"-"!:\resource\apps\title.mbm"
+"\epoc32\data\Z\Resource\apps\title.mif"-"!:\resource\apps\title.mif"

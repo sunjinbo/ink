@@ -1,0 +1,12 @@
+CHARACTER_SET UTF8
+#define qtn_ink_short_caption_str "Ink"
+#define qtn_ink_caption_list "Ink"
+#define qtn_ink_title_ink "Ink"
+#define qtn_ink_info_mission_completed "MISSION COMPLETED!!!"
+#define qtn_ink_info_game_over "GAME OVER!"
+#define qtn_ink_info_level_intro "GET %d BALL OUT OF %d."
+#define qtn_ink_info_expire_time "EXPIRE TIME, TRY AGAIN!!!"
+#define qtn_ink_button_start "Start!!"
+#define qtn_ink_info_tooltip_start "LAST ONE BALL.."
+#define qtn_ink_info_tooltip_more_ball "%d MORE BALL..."
+#define qtn_ink_info_tooltip_extra_bonus "EXTRA BONUS"

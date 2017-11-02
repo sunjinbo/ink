@@ -1,0 +1,31 @@
+/* ====================================================================
+ * File: Inkdot.hrh
+ * Created: 03/03/10
+ * Author: Sun Jinbo
+ * Copyright (c): Tieto, All rights reserved
+ * ==================================================================== */
+
+#ifndef INKDOT_HRH
+#define INKDOT_HRH
+
+// ENUMERATES
+enum TInkdotType
+    {
+    EInkdotNull = -1,
+    ETouchInkdot,
+    ERedInkdot,
+    EGrayInkdot,
+    EBlueInkdot,
+    EDarkBlueInkdot,
+    EYellowInkdot,
+    EGreenInkdot,
+	EDarkGreenInkdot,
+    EPurpleInkdot,
+	EPinkInkdot,
+    EOrangeInkdot,
+    EInkdotLastElement
+    };
+
+#endif // INKDOT_HRH
+
+// End of file

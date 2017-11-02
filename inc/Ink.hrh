@@ -1,0 +1,22 @@
+/* ====================================================================
+ * File: Ink.hrh
+ * Created: 03/03/10
+ * Author: Sun Jinbo
+ * Copyright (c): Tieto, All rights reserved
+ * ==================================================================== */
+
+#ifndef INK_HRH
+#define INK_HRH
+
+// Enums
+enum TInkCmdIds
+    {
+    EInkCmdStart = 1, // start value must not be 0
+    EInkCmdBack,
+    EInkCmdWeb,
+    EInkCmdQuit
+    };
+
+#endif // INK_HRH
+
+// End of File

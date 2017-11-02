@@ -1,0 +1,28 @@
+/* ====================================================================
+ * File: Inkdot.rh
+ * Created: 03/22/10
+ * Author: Sun Jinbo
+ * Copyright (c): Tieto, All rights reserved
+ * ==================================================================== */
+
+#ifndef INKDOT_RH
+#define INKDOT_RH
+
+// INCLUDES
+
+// RESOURCE STRUCTS
+
+STRUCT INKDOTCONFIGLIST
+    {
+    STRUCT list[];
+    }
+
+STRUCT INKDOTCONFIG
+    {
+	LONG type;
+    LONG score;
+    }
+
+#endif // INK_RH
+
+// End of File

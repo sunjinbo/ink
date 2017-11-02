@@ -1,0 +1,329 @@
+// ====================================================================
+// File: Ink.rss
+// Created: 03/03/10
+// Author: Sun Jinbo
+// Copyright (c): Tieto, All rights reserved
+// ==================================================================== */
+
+NAME HELL
+
+#include <eikon.rh>
+#include <eikon.rsg>
+#include <avkon.rh>
+#include <avkon.rsg>
+#include <button.mbg>
+#include "Ink.hrh"
+#include "Inkdot.hrh"
+#include "Ink.rh"
+#include "Button.rh"
+#include "Inkdot.rh"
+#include "Ink.loc"
+
+// ---------------------------------------------------------
+//   
+//    Define the resource file signature 
+//    This resource should be empty.
+//
+// ---------------------------------------------------------
+//
+RESOURCE RSS_SIGNATURE { }
+
+// ---------------------------------------------------------
+//   
+//    Default Document Name
+//
+// ---------------------------------------------------------
+//
+RESOURCE TBUF r_default_document_name { buf=""; }
+
+// ---------------------------------------------------------
+//   
+//    Define default menu and CBA key.
+//
+// ---------------------------------------------------------
+//
+RESOURCE EIK_APP_INFO
+    {
+    menubar = r_Ink_menubar;
+    cba = R_AVKON_SOFTKEYS_OPTIONS_EXIT;
+    }
+
+
+// ---------------------------------------------------------
+//   
+//   r_Ink_menubar
+//   Menubar for Ink example
+//
+// ---------------------------------------------------------
+//
+RESOURCE MENU_BAR r_Ink_menubar
+    {
+    titles =
+        {
+        MENU_TITLE 
+            {
+            menu_pane = r_Ink_menu;
+            }
+        };
+    }
+
+// ---------------------------------------------------------
+//   
+//   r_Ink_menu
+//
+// ---------------------------------------------------------
+//
+RESOURCE MENU_PANE r_Ink_menu
+    {
+    items = 
+        {
+        MENU_ITEM 
+            {
+            command = EAknSoftkeyExit; 
+            }
+        };
+    }
+
+// ----------------------------------------------------
+//    r_Ink_start
+// ----------------------------------------------------
+//
+RESOURCE BUTTON r_Ink_start
+    {
+    id = EInkCmdStart;
+    enabled = 1;
+    align = 1;
+    bitmap = EMbmButtonStart;
+    mask = EMbmButtonStart_mask;
+    font = 45;
+    baseline = 32;
+    color = 0x000000;
+    txt = qtn_ink_button_start;
+    }
+
+// ----------------------------------------------------
+//    r_Ink_back
+// ----------------------------------------------------
+//
+RESOURCE BUTTON r_Ink_back
+    {
+    id = EInkCmdBack;
+    enabled = 1;
+    bitmap = EMbmButtonBack;
+    mask = EMbmButtonBack_mask;
+    }
+
+// ----------------------------------------------------
+//    r_Ink_web
+// ----------------------------------------------------
+//
+RESOURCE BUTTON r_Ink_web
+    {
+    id = EInkCmdWeb;
+    enabled = 1;
+    bitmap = EMbmButtonWeb;
+    mask = EMbmButtonWeb_mask;
+    }
+
+// ----------------------------------------------------
+//    r_Ink_quit
+// ----------------------------------------------------
+//
+RESOURCE BUTTON r_Ink_quit
+    {
+    id = EInkCmdQuit;
+    enabled = 1;
+    bitmap = EMbmButtonQuit;
+    mask = EMbmButtonQuit_mask;
+    }
+
+// ---------------------------------------------------------
+//   
+//   r_Ink_levels
+//
+// ---------------------------------------------------------
+//
+RESOURCE INKLEVELARRAY r_Ink_levels
+    {
+    levels = 
+        {
+        INKLEVEL
+            {
+            id = 1;
+            count = 5;
+            pass = 3;
+            bonus = 100;
+            timeout = 30;
+            },
+        INKLEVEL
+            {
+            id = 2;
+            count = 8;
+            pass = 4;
+            bonus = 200;
+            timeout = 30;
+            },
+        INKLEVEL
+            {
+            id = 3;
+            count = 10;
+            pass = 5;
+            bonus = 200;
+            timeout = 30;
+            },
+        INKLEVEL
+            {
+            id = 4;
+            count = 12;
+            pass = 5;
+            bonus = 200;
+            timeout = 30;
+            },
+        INKLEVEL
+            {
+            id = 5;
+            count = 14;
+            pass = 5;
+            bonus = 200;
+            timeout = 30;
+            },
+        INKLEVEL
+            {
+            id = 6;
+            count = 14;
+            pass = 5;
+            bonus = 200;
+            timeout = 30;
+            },
+        INKLEVEL
+            {
+            id = 7;
+            count = 18;
+            pass = 6;
+            bonus = 200;
+            timeout = 30;
+            },
+        INKLEVEL
+            {
+            id = 8;
+            count = 20;
+            pass = 8;
+            bonus = 200;
+            timeout = 30;
+            },
+        INKLEVEL
+            {
+            id = 9;
+            count = 22;
+            pass = 9;
+            bonus = 200;
+            timeout = 30;
+            },
+        INKLEVEL
+            {
+            id = 10;
+            count = 26;
+            pass = 10;
+            bonus = 200;
+            timeout = 30;
+            }
+        };
+    }
+
+// ---------------------------------------------------------
+//   
+//   r_Ink_inkdot_configuration_list
+//
+// ---------------------------------------------------------
+//
+RESOURCE INKDOTCONFIGLIST r_Ink_inkdot_configuration_list
+    {
+    list = 
+        {
+        INKDOTCONFIG
+            {
+            type = ERedInkdot;
+            score = 100;
+            },
+        INKDOTCONFIG
+            {
+            type = EGrayInkdot;
+            score = 200;
+            },
+        INKDOTCONFIG
+            {
+            type = EBlueInkdot;
+            score = 200;
+            },
+        INKDOTCONFIG
+            {
+            type = EDarkBlueInkdot;
+            score = 300;
+            },
+        INKDOTCONFIG
+            {
+            type = EYellowInkdot;
+            score = 100;
+            },
+        INKDOTCONFIG
+            {
+            type = EGreenInkdot;
+            score = 300;
+            },
+        INKDOTCONFIG
+            {
+            type = EDarkGreenInkdot;
+            score = 200;
+            },
+        INKDOTCONFIG
+            {
+            type = EPurpleInkdot;
+            score = 100;
+            },
+        INKDOTCONFIG
+            {
+            type = EPinkInkdot;
+            score = 300;
+            },
+        INKDOTCONFIG
+            {
+            type = EOrangeInkdot;
+            score = 100;
+            }
+        };
+    }
+
+// ---------------------------------------------------------
+//   
+//   r_ink_info_tooltip_start
+//
+// ---------------------------------------------------------
+//
+RESOURCE TBUF r_ink_info_tooltip_start
+    {
+    buf = qtn_ink_info_tooltip_start;
+    }
+
+// ---------------------------------------------------------
+//   
+//   r_ink_info_info_tooltip_more_ball
+//
+// ---------------------------------------------------------
+//
+RESOURCE TBUF r_ink_info_tooltip_more_ball
+    {
+    buf = qtn_ink_info_tooltip_more_ball;
+    }
+
+// ---------------------------------------------------------
+//   
+//   r_ink_info_info_tooltip_extra_bonus
+//
+// ---------------------------------------------------------
+//
+RESOURCE TBUF r_ink_info_tooltip_extra_bonus
+    {
+    buf = qtn_ink_info_tooltip_extra_bonus;
+    }
+
+// End of File

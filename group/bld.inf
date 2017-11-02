@@ -1,0 +1,7 @@
+PRJ_MMPFILES
+gnumakefile InkIcons_aif.mk
+gnumakefile button.mk
+gnumakefile inkdot.mk
+gnumakefile canvas.mk
+gnumakefile title.mk
+Ink.mmp
